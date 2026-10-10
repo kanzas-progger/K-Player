@@ -1,8 +1,9 @@
 {
   "name": "k-player",
   "version": "1.0.0",
-  "description": "",
-  "license": "ISC",
+  "description": "Electron JS Audio Player",
+  "desktopName": "K-Player",
+  "license": "MIT",
   "author": "kanzas-progger",
   "type": "commonjs",
   "main": "main.js",
@@ -24,7 +25,7 @@
   },
   "build": {
     "appId": "k-player",
-    "productName": "K-PLayer",
+    "productName": "K-Player",
     "files": [
       "main.js",
       "preload.js",
@@ -54,11 +55,12 @@
     },
     "linux": {
       "target": [
-        "AppImage",
+        "deb",
         "tar.gz"
       ],
       "category": "Audio",
-      "icon": "assets/logo.png"
+      "icon": "assets/logo.png",
+      "maintainer": "nick.chugunov1@yandex.ru"
     }
   },
   "dependencies": {
