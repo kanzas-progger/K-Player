@@ -17,7 +17,7 @@ Available builds:
 | Platform | Formats                      |
 | -------- | ---------------------------- |
 | Windows  | Installer (`.exe`), Portable |
-| Linux    | AppImage, `.tar.gz`          |
+| Linux    | Deb Package, `.tar.gz`       |
 
 **[Download the latest release →](https://github.com/kanzas-progger/K-Player/releases/latest)**
 
@@ -109,7 +109,7 @@ npm run build:linux
 
 This produces:
 
-* AppImage
+* .deb
 * `.tar.gz`
 
 ### Full build
@@ -176,7 +176,7 @@ The application currently supports:
 | Platform | Distribution             |
 | -------- | ------------------------ |
 | Windows  | NSIS installer, Portable |
-| Linux    | AppImage, `.tar.gz`      |
+| Linux    | Deb Package, `.tar.gz`   |
 | macOS    | Not currently supported  |
 
 ## Releases
@@ -187,7 +187,7 @@ Each release may contain:
 
 * Windows installer
 * Windows Portable version
-* Linux AppImage
+* Linux `.deb`
 * Linux `.tar.gz`
 * Release notes
 
@@ -257,7 +257,7 @@ See [`LICENSE`](LICENSE) for more information.
 | Платформа | Форматы                       |
 | --------- | ----------------------------- |
 | Windows   | Установщик (`.exe`), Portable |
-| Linux     | AppImage, `.tar.gz`           |
+| Linux     | Deb Package, `.tar.gz`        |
 
 **[Скачать последнюю версию →](https://github.com/kanzas-progger/K-Player/releases/latest)**
 
@@ -349,7 +349,7 @@ npm run build:linux
 
 Создаются:
 
-* AppImage
+* `.deb`
 * `.tar.gz`
 
 ### Полная сборка
@@ -416,7 +416,7 @@ Renderer использует:
 | Платформа | Распространение           |
 | --------- | ------------------------- |
 | Windows   | NSIS-установщик, Portable |
-| Linux     | AppImage, `.tar.gz`       |
+| Linux     | Deb Package, `.tar.gz`    |
 | macOS     | Пока не поддерживается    |
 
 ## Релизы
@@ -427,7 +427,7 @@ Renderer использует:
 
 * установщик Windows;
 * Portable-версию Windows;
-* AppImage для Linux;
+* `.deb` для Linux;
 * `.tar.gz` для Linux;
 * описание изменений.
 
