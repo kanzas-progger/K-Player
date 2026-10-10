@@ -4,6 +4,10 @@ A desktop music player built with Electron, React and SQLite.
 
 [![Latest Release](https://img.shields.io/github/v/release/kanzas-progger/K-Player)](https://github.com/kanzas-progger/K-Player/releases/latest)
 
+## Screenshots
+
+![alt text](screenshots/1.png)
+
 ## Download
 
 Download the latest version from the **[GitHub Releases](https://github.com/kanzas-progger/K-Player/releases)** page.
@@ -239,6 +243,10 @@ See [`LICENSE`](LICENSE) for more information.
 Десктопный музыкальный плеер на Electron, React и SQLite.
 
 [![Latest Release](https://img.shields.io/github/v/release/kanzas-progger/K-Player)](https://github.com/kanzas-progger/K-Player/releases/latest)
+
+## Скриншоты
+
+![alt text](screenshots/1.png)
 
 ## Скачать
 
