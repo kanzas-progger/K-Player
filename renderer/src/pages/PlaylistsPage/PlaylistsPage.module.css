@@ -1,0 +1,369 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 10px 20px;
+    width: 100%;
+    user-select: none;
+
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.header-container {
+    background-color: var(--color-surface);
+    border-radius: 10px 10px 0 0;
+    padding: 20px 0px 10px 20px;
+}
+
+.header-text {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--color-text-default);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--color-surface);
+    border-radius: 0 0 10px 10px;
+}
+
+.card-wrapper {
+    display: grid;
+    /* grid-template-columns: repeat(6, 1fr); */
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.card {
+    border: 1px solid var(--color-stroke);
+    border-radius: 10px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: background-color 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.card-inner {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-playlist-add {
+    border: 1px solid var(--color-stroke);
+    border-radius: 10px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: background-color 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.card-text-container {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+}
+
+.card-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text-default);
+    transition: color 0.2s ease;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-count {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-text-secondary);
+    transition: color 0.2s ease;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-image {
+    border-radius: 10px;
+    aspect-ratio: 1 / 1;
+    transition: filter 0.2s ease;
+}
+
+.card-image-play_arrow-icon {
+    font-size: 52px !important;
+    color: var(--color-text-default);
+    font-variation-settings: 'FILL' 1;
+    transition: color 0.1s ease;
+}
+
+.card-image-secondary-icon {
+    font-size: 24px !important;
+    color: var(--color-text-default);
+    transition: color 0.1s ease;
+}
+
+.card-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+}
+
+.card-image-container-empty {
+    background-color: var(--color-track-active);
+    border-radius: 10px;
+}
+
+.card-image-empty-icon {
+    font-size: 32px !important;
+    color: var(--color-text-secondary);
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.card-image-empty-playlist-add-icon {
+    font-size: 32px !important;
+    color: var(--color-text-secondary);
+    transition: color 0.2s ease;
+}
+
+.card-image-overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    will-change: opacity;
+}
+
+.scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(132, 148, 149, 0.2) transparent;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(132, 148, 149, 0.2);
+    border-radius: 999px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 160, 160, 0.45);
+}
+
+/* create playlist modal */
+
+.modal-container {
+    margin-top: 20px;
+}
+
+.modal-container p {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    user-select: none;
+}
+
+.modal-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.modal-import-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-input-container p {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-text-secondary);
+    user-select: none;
+}
+
+.modal-input {
+    background-color: var(--color-surface);
+    border-radius: 5px;
+    border: none;
+    color: var(--color-text-default);
+    padding: 5px 10px;
+    outline: 1px solid var(--color-stroke);
+}
+
+.modal-input:focus {
+    outline-color: var(--color-primary);
+    outline-offset: 0;
+    border-radius: 5px;
+}
+
+.modal-input-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.modal-image-container {
+    box-sizing: border-box;
+    flex: 0 0 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-surface);
+    padding: 10px;
+    height: 120px;
+    border: 2px dashed var(--color-stroke);
+    border-radius: 5px;
+    user-select: none;
+}
+
+.modal-image-container span {
+    color: var(--color-text-secondary);
+    font-size: 36px !important;
+}
+
+.modal-image-container:hover {
+    cursor: pointer;
+    border-color: var(--color-primary);
+}
+
+.modal-image-container:hover span {
+    color: var(--color-text-default)
+}
+
+.modal-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+}
+
+.modal-import-btn {
+    border: 1px solid var(--color-primary);
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+    will-change: transform;
+}
+
+.modal-btn-text {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+}
+
+.modal-import-btn-text {
+    color: var(--color-primary) !important;
+}
+
+.import-icon {
+    color: var(--color-primary);
+    font-size: 18px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.modal-footer-container {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.modal-footer-btn {
+    border: 2px solid var(--color-stroke);
+    padding: 5px 15px 5px 15px;
+}
+
+.modal-footer-btn-text {
+    color: var(--color-text-secondary) !important;
+}
+
+.modal-footer-btn:hover {
+    border-color: var(--color-primary);
+}
+
+.modal-footer-btn:hover .modal-footer-btn-text {
+    color: var(--color-text-default) !important;
+}
+
+
+/* hover effects */
+
+.modal-import-btn:hover {
+    transform: translateZ(0) scale(1.05);
+}
+
+.card:hover {
+    background-color: var(--color-surface-hover);
+    transform: scale(1.02);
+    border-color: var(--color-primary);
+}
+
+.card-playlist-add:hover {
+    transform: scale(1.02);
+    border-color: var(--color-primary);
+}
+
+.card-playlist-add:hover .card-count {
+    color: var(--color-text-default);
+}
+
+.card-playlist-add:hover .card-image-empty-playlist-add-icon {
+    color: var(--color-text-default);
+}
+
+.card:hover .card-count {
+    color: var(--color-text-default);
+}
+
+.card:hover .card-image:not(.card-image-empty) {
+    filter: brightness(0.2);
+}
+
+.card:hover .card-image-empty-icon {
+    opacity: 0;
+}
+
+.card:hover .card-image-overlay {
+    opacity: 1;
+}
+
+.card-image-play_arrow-icon:hover,
+.card-image-secondary-icon:hover {
+    color: var(--color-text-secondary);
+}

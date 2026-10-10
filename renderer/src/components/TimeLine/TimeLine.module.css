@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+
+.text-time {
+    font-family: 'JetBrains Mono', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    width: 6ch;
+    flex: 0 0 6ch;
+}
+
+.text-time-start {
+    text-align: right;
+}
+
+.text-time-end {
+    text-align: left;
+}

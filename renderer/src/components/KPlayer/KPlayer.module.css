@@ -1,0 +1,82 @@
+.container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 88px;
+    /* background-color: var(--color-surface); */
+    background-color: var(--color-bg);
+    /* border-top: 1px solid var(--color-stroke); */
+    cursor: pointer;
+    user-select: none;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.text-name {
+    color: var(--color-text-default);
+    font-size: 16px;
+}
+
+.text-author {
+    color: var(--color-text-secondary);
+    font-size: 14px;
+}
+
+.text-name,
+.text-author {
+    font-family: 'Hanken Grotesk', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    min-width: 0;
+}
+
+.play_circle-icon {
+    color: var(--color-text-default);
+    font-variation-settings: 'FILL' 1;
+    font-size: 36px !important;
+    border-radius: 50%;
+    transform: scale(1);
+    will-change: transform;
+}
+
+
+.secondary-icon {
+    color: var(--color-text-secondary);
+    font-size: 20px !important;
+    transition: color 0.2s ease;
+}
+
+.secondary-icon.active {
+    color: var(--color-primary) !important;
+}
+
+.fullscreen-icon {
+    font-size: 20px !important;
+}
+
+.volume_up-icon {
+    font-variation-settings: 'FILL' 1;
+    font-size: 24px !important;
+}
+
+.skip-icon {
+    font-size: 28px !important;
+    font-variation-settings: 'FILL' 1;
+}
+
+/* hover effects */
+
+.secondary-icon:hover {
+    color: var(--color-text-default);
+}
+
+.play_circle-icon:hover {
+    transform: scale(1.05);
+}

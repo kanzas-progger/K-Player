@@ -1,0 +1,121 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    user-select: none;
+}
+
+.playlist-card-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+
+    width: 100%;
+}
+
+.playlist-card-text-container {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+    min-width: 0;
+}
+
+.playlist-card-inner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    flex: 1;
+    min-width: 0;
+}
+
+.playlist-icon-container {
+    background-color: var(--color-track-active);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.playlist-name-text {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text-default);
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.tracks-count-text {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-text-secondary);
+}
+
+.playlist-icon {
+    color: var(--color-text-default);
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    user-select: none;
+    padding-right: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--color-stroke);
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn p {
+    color: var(--color-text-secondary);
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+}
+
+.btn-submit {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.btn-submit p {
+    color: var(--color-bg);
+}
+
+.btn.btn-cancel:hover {
+    border-color: var(--color-primary);
+}
+
+.btn.btn-cancel:hover p {
+    color: var(--color-text-default);
+}
+
+.btn.btn-submit:hover {
+    filter: brightness(0.8);
+}
+
+.playlist-card-container:hover {
+    background-color: var(--color-track-hover);
+}
+
+.playlist-card-container:hover .kcheckbox-override {
+    border-color: var(--color-primary);
+}

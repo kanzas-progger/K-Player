@@ -1,0 +1,37 @@
+.kslider .ant-slider-handle {
+    background: var(--color-text-default) !important;
+
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+
+    transition: none !important;
+    border-radius: 50% !important;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+
+}
+
+.kslider .ant-slider-handle::before,
+.kslider .ant-slider-handle::after {
+    content: none !important;
+    display: none !important;
+}
+
+.kslider:hover .ant-slider-handle {
+    border-radius: 50% !important;
+    background: var(--color-text-default) !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    opacity: 1;
+}
+
+.kslider .ant-slider-handle:active,
+.kslider .ant-slider-handle:focus {
+    border-radius: 50% !important;
+    background: var(--color-text-default) !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}

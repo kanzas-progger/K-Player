@@ -1,0 +1,116 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* padding: 0 20px; */
+    padding: 0 20px 10px 20px;
+    height: 100%;
+    /* box-sizing: border-box;
+    height: calc(100vh - 60px - 88px - 10px); */
+    gap: 20px;
+    
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: var(--color-surface);
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    /* height: 100%; */
+
+    box-sizing: border-box;
+}
+
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* height: 100%; */
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.card-wrapper-with-swithes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    /* height: 100%; */
+    gap: 20px;
+    padding-top: 30px;  
+}
+ 
+.card-wrapper-with-swithes p {
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: var(--color-text-secondary);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card {
+    background-color: var(--color-track-hover);
+    width: 20%;
+    height: 140px;
+    border: 1px solid var(--color-stroke);
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    height: 100%;
+}
+
+.card-content-text {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 16px;
+    color: var(--color-text-secondary);
+    transition: color 0.2s ease;
+}
+
+.card-content-icon {
+    font-size: 25px !important;
+    color: var(--color-text-secondary);
+    transition: color 0.2s ease;
+}
+
+.card-header {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--color-text-default);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* active styles */
+
+.card-active {
+    border: 1px solid var(--color-primary); 
+    background-color: var(--color-surface-hover);  
+}
+
+.card-active .card-content-text,
+.card-active .card-content-icon {
+    color: var(--color-primary);   
+}
+
+/* hover effects */
+
+.card:not(.card-active):hover {
+    background-color: var(--color-surface-hover);
+}
+
+.card:not(.card-active):hover .card-content-icon,
+.card:not(.card-active):hover .card-content-text {
+    color: var(--color-text-default);
+}

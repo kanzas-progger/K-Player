@@ -1,0 +1,309 @@
+.item-container {
+    width: 100%;
+    height: 72px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.item-container-active {
+    background-color: var(--color-track-active);
+}
+
+.item-duration {
+    font-family: 'JetBrains Mono', sans-serif;
+    color: var(--color-text-default);
+    font-size: 14px;
+    font-weight: 500;
+    min-width: 70px;
+    text-align: right;
+}
+
+.item-text-name {
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: var(--color-text-default);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.item-text-name-active {
+    color: var(--color-primary);
+}
+
+.item-text-author {
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: var(--color-text-secondary);
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.1s ease;
+}
+
+.item-text-author-active {
+    color: var(--color-text-default);
+}
+
+.item-container-active .item-duration {
+    color: var(--color-primary);
+}
+
+.item-cover-wrapper {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    margin-left: 8px;
+    user-select: none;
+}
+
+.item-cover {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    display: block;
+    transition: filter 0.2s ease;
+}
+
+.item-cover-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-track-active);
+}
+
+.item-cover-active {
+    filter: brightness(0.1);
+}
+
+.item-music_note_2-icon {
+    font-size: 32px !important;
+    color: var(--color-text-secondary);
+}
+
+.item-play_arrow-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-play-icon);
+    font-size: 32px !important;
+    font-variation-settings: 'FILL' 1;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.item-pause-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-pause-icon);
+    font-size: 32px !important;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.item-thumb_down-icon {
+    color: var(--color-text-secondary);
+    opacity: 0;
+    transition: color 0.2s ease;
+    transition: opacity 0.2s ease;
+}
+
+.item-thumb_down-icon-filled {
+    color: var(--color-dislike-icon);
+    font-variation-settings: 'FILL' 1;
+    transition: font-variation-settings 0.2s ease;
+}
+
+.item-thumb_down-icon-active {
+    opacity: 1;
+}
+
+.item-favorite-icon {
+    color: var(--color-text-secondary);
+    opacity: 0;
+    transition: color 0.2s ease;
+    transition: opacity 0.2s ease;
+}
+
+.item-favorite-icon-filled {
+    color: var(--color-primary);
+    font-variation-settings: 'FILL' 1;
+    transition: font-variation-settings 0.2s ease;
+}
+
+.item-favorite-icon-active {
+    opacity: 1;
+}
+
+.item-more_vert-icon {
+    color: var(--color-text-secondary);
+    transition: color 0.2s ease;
+}
+
+/* hover effects */
+
+.item-container:not(.item-container-active):hover {
+    background-color: var(--color-track-hover);
+}
+
+.item-container:not(.item-container-active):hover .item-favorite-icon,
+.item-container:not(.item-container-active):hover .item-thumb_down-icon {
+    opacity: 1;
+}
+
+.item-container:not(.item-container-active):hover .item-text-author {
+    color: var(--color-text-default);
+}
+
+.item-thumb_down-icon:hover {
+    color: var(--color-dislike-icon);
+}
+
+.item-thumb_down-icon-filled:hover {
+    font-variation-settings: 'FILL' 0;
+}
+
+.item-favorite-icon:hover {
+    color: var(--color-primary);
+}
+
+.item-favorite-icon-filled:hover {
+    font-variation-settings: 'FILL' 0;
+}
+
+.item-more_vert-icon:hover {
+    color: var(--color-text-default);
+}
+
+.item-container:not(.item-container-active) .item-cover-wrapper:hover .item-cover {
+    filter: brightness(0.5);
+}
+
+.item-cover-wrapper:hover .item-play_arrow-icon,
+.item-cover-wrapper:hover .item-pause-icon {
+    opacity: 1;
+}
+
+/* playing bars 5 count */
+
+.playing-bars {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 20px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.playing-bars .bar {
+    width: 3px;
+    height: 2px;
+    background-color: var(--color-primary);
+}
+
+.playing-bars.is-playing .bar {
+    animation: bounce infinite linear;
+}
+
+.playing-bars.is-playing .bar:nth-child(1) {
+    animation-duration: 0.6s;
+}
+
+.playing-bars.is-playing .bar:nth-child(2) {
+    animation-duration: 0.8s;
+    animation-delay: 0.15s;
+}
+
+.playing-bars.is-playing .bar:nth-child(3) {
+    animation-duration: 0.7s;
+    animation-delay: 0.3s;
+}
+
+.playing-bars.is-playing .bar:nth-child(4) {
+    animation-duration: 0.5s;
+    animation-delay: 0.05s;
+}
+
+.playing-bars.is-playing .bar:nth-child(5) {
+    animation-duration: 0.7s;
+    animation-delay: 0.4s;
+}
+
+.item-cover-wrapper:hover .playing-bars {
+    opacity: 0;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        height: 1px;
+    }
+
+    50% {
+        height: 14px;
+    }
+}
+
+/* Dropdown Menu */
+
+:global(.ant-dropdown-menu).custom-dropdown-menu {
+    background-color: var(--color-surface-hover) !important;
+    border-radius: 10px !important;
+    padding: 10px !important;
+}
+
+.dropdown-menu-icon {
+    font-family: 'Material Symbols Outlined' !important;
+    font-size: 20px !important;
+    /* Для точного выравнивания с текстом */
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu-delete-icon {
+    color: var(--color-dropdown-delete-icon);
+}
+
+.dropdown-menu-playlist_add-icon {
+    color: var(--color-text-default);
+}
+
+/* 1. Стили для самого внешнего контейнера подменю (div) */
+:global(.ant-dropdown-menu-submenu-popup).playlists-submenu {
+    max-width: 200px !important;
+    width: 200px; /* Задаем явную ширину, если подменю сжимается */
+}
+
+/* 2. Стили для внутреннего списка (ul) */
+:global(.ant-dropdown-menu-submenu-popup).playlists-submenu :global(.ant-dropdown-menu) {
+    max-width: 200px !important;
+}
+
+/* 3. Стили для пунктов меню (li) */
+:global(.ant-dropdown-menu-submenu-popup).playlists-submenu :global(.ant-dropdown-menu-item) {
+    min-width: 0 !important;
+}
+
+/* 4. Стили для текста с обрезкой (ellipsis) */
+:global(.ant-dropdown-menu-submenu-popup).playlists-submenu :global(.ant-dropdown-menu-title-content) {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+}
+
+/* 5. Дополнительно: обрезка текста в случае наличия иконки/extra галочки (span.ant-dropdown-menu-item-label) */
+:global(.ant-dropdown-menu-submenu-popup).playlists-submenu :global(.ant-dropdown-menu-item-label) {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    display: block !important;
+}

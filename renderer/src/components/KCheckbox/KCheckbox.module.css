@@ -1,0 +1,21 @@
+.container {
+    background-color: transparent;
+    border: 1px solid var(--color-stroke);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.check-icon {
+    color: var(--color-surface);
+    opacity: 0;
+}
+
+.container-checked {
+    background-color: var(--color-primary);
+}
+
+.check-icon-checked {
+    opacity: 1;
+}

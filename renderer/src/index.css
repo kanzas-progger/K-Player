@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("./assets/fonts/HankenGrotesk-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("./assets/fonts/HankenGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("./assets/fonts/HankenGrotesk-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("./assets/fonts/HankenGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./assets/fonts/PlusJakartaSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./assets/fonts/PlusJakartaSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./assets/fonts/PlusJakartaSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("./assets/fonts/JetBrainsMono-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --color-primary: #7DF4FF;
+  /* --color-primary: #B388FF; */
+  /* --color-primary: #D500F9; */
+  /* --color-primary: #18FFFF; */
+  --color-bg: #0E0E10;
+  --color-surface: #1C1B1D;
+  --color-surface-hover: #2A2A2C;
+  --color-stroke: #3B494B;
+
+  --color-text-default: #FFFFFF;
+  --color-text-secondary: #B9CACB;
+
+  --color-track-hover: #161619;
+  --color-track-active: #2A2A2C;
+
+  --color-dropdown-item-hover: #161619;
+
+  --color-dislike-icon: #FFB4A5;
+  --color-dropdown-delete-icon: #FF6445;
+  --color-play-icon: #FFFFFF;
+  --color-pause-icon: #FFFFFF;
+}
+
+[data-theme="light"] {
+
+  --color-primary: #1853C0;
+  /* --color-primary: #4285F4; */
+  /* --color-primary: #5E35B1; */
+  /* --color-primary: #00695C; */
+  /* --color-primary: #8E3D0B; */
+
+  --color-bg: #FFFFFF;
+  --color-surface: #F1F3F4;
+  --color-surface-hover: #E3E6E8;
+  --color-stroke: #C6D2D4;
+
+  --color-text-default: #000000;
+  --color-text-secondary: #4A4A4A;
+
+  --color-track-hover: #E1E4E8;
+  --color-track-active: #D1D6DC;
+
+  --color-dropdown-item-hover: #D0D5DA;
+
+  --color-dislike-icon: #EA4335;
+  --color-dropdown-delete-icon: #EA4335;
+  --color-play-icon: #FFFFFF;
+  --color-pause-icon: #FFFFFF;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-bg);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-surface-hover);
+}
+
+::-webkit-scrollbar-button:start {
+  opacity: 0;
+  height: 0px;
+}
+
+::-webkit-scrollbar-button:end {
+  opacity: 0;
+  height: 5px;
+}
+
+/* scrollbar */
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

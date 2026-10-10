@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-surface);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    user-select: none;
+    cursor: default;
+}
+
+.wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.content-container {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.content-header-text {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: var(--color-text-default);
+}
+
+.content-desc-text {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-text-secondary);
+}
+
+.upload-buttons-container{
+    display: flex;
+    gap: 20px;
+}
+
+.upload-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    padding: 5px 10px 5px 5px;
+    cursor: pointer;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+    will-change: transform;
+}
+
+.upload-btn-text {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--color-primary);    
+}
+
+.upload-icon {
+    color: var(--color-primary);
+    font-size: 18px !important;
+    padding: 0 !important;
+    margin: 0 !important;    
+}
+
+.library_music-icon {
+    color: var(--color-text-default);
+    font-size: 156px !important;
+}
+
+.upload-btn:hover {
+    background-color: var(--color-track-active);
+    transform: translateZ(0) scale(1.05);
+}

@@ -1,0 +1,58 @@
+.container {
+    padding: 20px;
+    background-color: var(--color-surface);
+    border-radius: 10px;
+    margin: 0 20px;
+    height: calc(100% - 10px);
+    user-select: none;
+}
+
+.header-container {
+    padding-right: 20px; 
+}
+
+.header-text {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--color-text-default);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.description-container{
+    margin-top: 20px;
+}
+
+.description-text {
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: var(--color-text-secondary);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.section-text {
+  font-family: 'Hanken Grotesk', sans-serif;
+  color: var(--color-text-default);
+  font-size: 16px;
+  font-weight: 700;
+  margin: 8px 0 8px 0;
+}
+
+.version-text {
+  font-family: 'Hanken Grotesk', sans-serif;
+  color: var(--color-text-default);
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.external-link {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.external-link:hover {
+  color: var(--color-text-default);
+}

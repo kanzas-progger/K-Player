@@ -1,0 +1,86 @@
+{
+    "navigation": {
+        "home": "Home",
+        "playlists": "Playlists",
+        "settings": "Settings",
+        "about": "About"
+    },
+    "app": {
+        "loading_text": "Loading..."
+    },
+    "settings_page": {
+        "language": "Language",
+        "theme": "Theme",
+        "playlists": "Playlists",
+        "dark": "Dark",
+        "light": "Light",
+        "system": "System",
+        "showDislikedSongsPlaylist": "Display Disliked Songs playlist",
+        "isDeleteDislikedTracksFromSystemEnabled": "Permanently delete tracks from the system when clearing the Disliked Songs playlist",
+        "playlistCountInDropDown": "Number of playlists in the dropdown"
+    },
+    "playlists_page": {
+        "playlists": "Playlists",
+        "liked": "Liked Songs",
+        "disliked": "Disliked Songs",
+        "tracks_count_one": "{{count}} Track",
+        "tracks_count_other": "{{count}} Tracks",
+        "create_playlist": "Create Playlist",
+        "add_new_tracks": "Add New Tracks"
+    },
+    "about_page": {
+        "description": "This application is a desktop audio player built with Electron.js. Initially created for the author's personal use, further development and feature expansions are planned for future updates",
+        "futurePlansSection": "Development Plans",
+        "futurePlansSectionText": "Future updates consider adding a mobile version of the application as well as integration with popular streaming services such as VK Music and other platforms",
+        "feedbackSection": "Feedback",
+        "feedbackSectionText": "If you find a bug or want to suggest an improvement, please open an Issue in the project repository on <githubLink>GitHub</githubLink>",
+        "version": "App version: {{version}}"
+    },
+    "tracklist": {
+        "my_tracks": "My Tracks"
+    },
+    "trackCard": {
+        "add_to_playlist": "Add to playlist",
+        "delete": "Delete",
+        "no_playlists": "No playlists",
+        "display_all_playlists": "Show all"
+    },
+    "library_empty": {
+        "add_audio_files": "Add audio",
+        "description": "Choose audio files or a folder with a playlist",
+        "upload_audio_file": "Audio Files",
+        "upload_playlist": "Playlist"
+    },
+    "processing_modal": {
+        "title_export": "Export",
+        "title_import": "Import",
+        "title_load": "Load",
+        "export_progress_one": "Exported {{loaded}} of {{count}} track",
+        "export_progress_other": "Exported {{loaded}} of {{count}} tracks",
+        "import_progress_one": "Imported {{loaded}} of {{count}} track",
+        "import_progress_other": "Imported {{loaded}} of {{count}} tracks",
+        "load_progress_one": "Loaded {{loaded}} of {{count}} track",
+        "load_progress_other": "Loaded {{loaded}} of {{count}} tracks"
+    },
+    "playlist_modal": {
+        "title_create": "Create playlist",
+        "title_edit": "Edit playlist",
+        "input_name": "Playlist name",
+        "quick_import": "Or quick import",
+        "cancel": "Cancel",
+        "save": "Save"
+    },
+    "playlists_modal": {
+        "title": "Add to playlist",
+        "tracks_count_one": "{{count}} track",
+        "tracks_count_other": "{{count}} tracks",
+        "cancel": "Cancel"
+    },
+    "confirm_modal": {
+        "delete_playlist_title": "Delete playlist?",
+        "delete_playlist_description": "Are you sure you want to delete this playlist? This action is irreversible",
+        "clean_playlist_title": "Clean playlist?",
+        "clean_playlist_description": "Are you sure you want to clean this playlist? This action is irreversible",
+        "cancel": "Cancel"
+    }
+}

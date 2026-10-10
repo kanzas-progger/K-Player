@@ -1,0 +1,93 @@
+{
+    "navigation": {
+        "home": "Главная",
+        "playlists": "Плейлисты",
+        "settings": "Настройки",
+        "about": "О программе"
+    },
+    "app": {
+        "loading_text": "Загрузка..."
+    },
+    "settings_page": {
+        "language": "Язык",
+        "theme": "Тема",
+        "playlists": "Плейлисты",
+        "dark": "Тёмная",
+        "light": "Светлая",
+        "system": "Системная",
+        "showDislikedSongsPlaylist": "Отображать плейлист с не понравившимися треками",
+        "isDeleteDislikedTracksFromSystemEnabled": "Включить полное удаление треков из системы при очистке плейлиста с не понравившимися треками",
+        "playlistCountInDropDown": "Количество плейлистов во всплывающем окне"
+    },
+    "playlists_page": {
+        "playlists": "Плейлисты",
+        "liked": "Любимое",
+        "disliked": "Нелюбимое",
+        "tracks_count_one": "{{count}} Трек",
+        "tracks_count_few": "{{count}} Трека",
+        "tracks_count_many": "{{count}} Треков",
+        "tracks_count_other": "{{count}} Трека",
+        "create_playlist": "Новый плейлист",
+        "add_new_tracks": "Добавить треки"
+    },
+    "about_page": {
+        "description": "Данное приложение представляет собой десктопный аудиоплеер, разработанный на платформе Electron.js. Изначально проект создавался для личного использования автора, однако в дальнейшем планируется его развитие и расширение функционала",
+        "futurePlansSection": "Планы по развитию",
+        "futurePlansSectionText": "В будущих обновлениях рассматривается возможность добавления мобильной версии приложения, а также интеграция с популярными стриминговыми сервисами, такими как VK Music и другие платформы",
+        "feedbackSection": "Обратная связь",
+        "feedbackSectionText": "Если вы обнаружили ошибку (баг) или хотите предложить идею по улучшению работы приложения, пожалуйста, создайте соответствующую тему (Issue) в репозитории проекта на <githubLink>GitHub</githubLink>",
+        "version": "Версия приложения: {{version}}"
+    },
+    "tracklist": {
+        "my_tracks": "Мои Треки"
+    },
+    "trackCard": {
+        "add_to_playlist": "Добавить в плейлист",
+        "delete": "Удалить",
+        "no_playlists": "Нет плейлистов",
+        "display_all_playlists": "Показать все"
+    },
+    "library_empty": {
+        "add_audio_files": "Добавить аудио",
+        "description": "Выберете аудио файлы или папку с плейлистом",
+        "upload_audio_file": "Аудиофайлы",
+        "upload_playlist": "Плейлист"
+    },
+    "processing_modal": {
+        "title_export": "Экспорт",
+        "title_import": "Импорт",
+        "title_load": "Загрузка",
+        "export_progress_one": "Экспортировано {{loaded}} из {{count}} трека",
+        "export_progress_few": "Экспортировано {{loaded}} из {{count}} треков",
+        "export_progress_many": "Экспортировано {{loaded}} из {{count}} треков",
+        "import_progress_one": "Импортировано {{loaded}} из {{count}} трека",
+        "import_progress_few": "Импортировано {{loaded}} из {{count}} треков",
+        "import_progress_many": "Импортировано {{loaded}} из {{count}} треков",
+        "load_progress_one": "Загружено {{loaded}} из {{count}} трека",
+        "load_progress_few": "Загружено {{loaded}} из {{count}} треков",
+        "load_progress_many": "Загружено {{loaded}} из {{count}} треков"
+    },
+    "playlist_modal": {
+        "title_create": "Новый плейлист",
+        "title_edit": "Редактирование плейлиста",
+        "input_name": "Название плейлиста",
+        "quick_import": "Или быстрый импорт",
+        "cancel": "Отменить",
+        "save": "Сохранить"
+    },
+    "playlists_modal": {
+        "title": "Добавить в плейлист",
+        "tracks_count_one": "{{count}} трек",
+        "tracks_count_few": "{{count}} трека",
+        "tracks_count_many": "{{count}} треков",
+        "tracks_count_other": "{{count}} трека",
+        "cancel": "Отменить"
+    },
+    "confirm_modal": {
+        "delete_playlist_title": "Удалить плейлист?",
+        "delete_playlist_description": "Вы уверены, что хотите удалить данный плейлист? Это действие необратимо",
+        "clean_playlist_title": "Очистить плейлист?",
+        "clean_playlist_description": "Вы уверены, что хотите очистить данный плейлист? Это действие необратимо",
+        "cancel": "Отменить"
+    }
+}
