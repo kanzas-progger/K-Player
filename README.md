@@ -2,11 +2,11 @@
 
 A desktop music player built with Electron, React and SQLite.
 
-[![Latest Release](https://img.shields.io/github/v/release/OWNER/REPOSITORY)](https://github.com/OWNER/REPOSITORY/releases/latest)
+[![Latest Release](https://img.shields.io/github/v/release/kanzas-progger/K-Player)](https://github.com/kanzas-progger/K-Player/releases/latest)
 
 ## Download
 
-Download the latest version from the **[GitHub Releases](https://github.com/OWNER/REPOSITORY/releases)** page.
+Download the latest version from the **[GitHub Releases](https://github.com/kanzas-progger/K-Player/releases)** page.
 
 Available builds:
 
@@ -15,7 +15,7 @@ Available builds:
 | Windows  | Installer (`.exe`), Portable |
 | Linux    | AppImage, `.tar.gz`          |
 
-**[Download the latest release →](https://github.com/OWNER/REPOSITORY/releases/latest)**
+**[Download the latest release →](https://github.com/kanzas-progger/K-Player/releases/latest)**
 
 All application binaries are distributed through GitHub Releases.
 
@@ -177,7 +177,7 @@ The application currently supports:
 
 ## Releases
 
-New versions are published on the **[GitHub Releases](https://github.com/OWNER/REPOSITORY/releases)** page.
+New versions are published on the **[GitHub Releases](https://github.com/kanzas-progger/K-Player/releases)** page.
 
 Each release may contain:
 
@@ -189,13 +189,13 @@ Each release may contain:
 
 For the latest stable version, use:
 
-**[Download Latest Release](https://github.com/OWNER/REPOSITORY/releases/latest)**
+**[Download Latest Release](https://github.com/kanzas-progger/K-Player/releases/latest)**
 
 ## Bug Reports
 
 Found a bug?
 
-Please create an **[Issue](https://github.com/OWNER/REPOSITORY/issues)** and provide as much information as possible.
+Please create an **[Issue](https://github.com/kanzas-progger/K-Player/issues)** and provide as much information as possible.
 
 A useful bug report should include:
 
@@ -215,7 +215,7 @@ Detailed bug reports make it much easier to reproduce and fix problems.
 
 Have an idea for a new feature or improvement?
 
-Create an **[Issue](https://github.com/OWNER/REPOSITORY/issues)** and describe:
+Create an **[Issue](https://github.com/kanzas-progger/K-Player/issues)** and describe:
 
 * what you would like to see;
 * why the feature would be useful;
@@ -238,11 +238,11 @@ See [`LICENSE`](LICENSE) for more information.
 
 Десктопный музыкальный плеер на Electron, React и SQLite.
 
-[![Latest Release](https://img.shields.io/github/v/release/OWNER/REPOSITORY)](https://github.com/OWNER/REPOSITORY/releases/latest)
+[![Latest Release](https://img.shields.io/github/v/release/kanzas-progger/K-Player)](https://github.com/kanzas-progger/K-Player/releases/latest)
 
 ## Скачать
 
-Последнюю версию можно скачать на странице **[GitHub Releases](https://github.com/OWNER/REPOSITORY/releases)**.
+Последнюю версию можно скачать на странице **[GitHub Releases](https://github.com/kanzas-progger/K-Player/releases)**.
 
 Доступны следующие сборки:
 
@@ -251,7 +251,7 @@ See [`LICENSE`](LICENSE) for more information.
 | Windows   | Установщик (`.exe`), Portable |
 | Linux     | AppImage, `.tar.gz`           |
 
-**[Скачать последнюю версию →](https://github.com/OWNER/REPOSITORY/releases/latest)**
+**[Скачать последнюю версию →](https://github.com/kanzas-progger/K-Player/releases/latest)**
 
 Все готовые версии приложения публикуются через GitHub Releases.
 
@@ -413,7 +413,7 @@ Renderer использует:
 
 ## Релизы
 
-Новые версии публикуются на странице **[GitHub Releases](https://github.com/OWNER/REPOSITORY/releases)**.
+Новые версии публикуются на странице **[GitHub Releases](https://github.com/kanzas-progger/K-Player/releases)**.
 
 Каждый релиз может содержать:
 
@@ -425,13 +425,13 @@ Renderer использует:
 
 Последнюю стабильную версию можно скачать здесь:
 
-**[Скачать последнюю версию](https://github.com/OWNER/REPOSITORY/releases/latest)**
+**[Скачать последнюю версию](https://github.com/kanzas-progger/K-Player/releases/latest)**
 
 ## Сообщение об ошибках
 
 Нашли баг?
 
-Создайте **[Issue](https://github.com/OWNER/REPOSITORY/issues)** и предоставьте как можно больше информации.
+Создайте **[Issue](https://github.com/kanzas-progger/K-Player/issues)** и предоставьте как можно больше информации.
 
 Хороший отчёт об ошибке должен содержать:
 
@@ -451,7 +451,7 @@ Renderer использует:
 
 Есть идея для новой функции или улучшения?
 
-Создайте **[Issue](https://github.com/OWNER/REPOSITORY/issues)** и опишите:
+Создайте **[Issue](https://github.com/kanzas-progger/K-Player/issues)** и опишите:
 
 * что вы хотели бы добавить;
 * почему эта функция будет полезна;
